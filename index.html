@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Billing System</h1>
+        <form id="billingForm">
+            <div class="product">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" placeholder="Enter product name" required>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" placeholder="Enter quantity" required>
+
+                <label for="price">Price per Item:</label>
+                <input type="number" id="price" step="0.01" min="0" placeholder="Enter price" required>
+
+                <label for="discount">Discount (%):</label>
+                <input type="number" id="discount" step="0.01" min="0" placeholder="Enter discount" value="0">
+
+                <label for="tax">Tax (%):</label>
+                <input type="number" id="tax" step="0.01" min="0" placeholder="Enter tax" value="0">
+
+                <button type="button" id="addProduct" class="add-product-btn">Add Product</button>
+            </div>
+        </form>
+
+        <h2>Invoice</h2>
+        <table id="invoiceTable">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price per Item</th>
+                    <th>Discount</th>
+                    <th>Tax</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic content will be added here -->
+            </tbody>
+        </table>
+
+        <div class="total-amount">
+            <h3>Total Amount: $<span id="totalAmount">0.00</span></h3>
+        </div>
+
+        <div class="actions">
+            <button type="button" id="saveInvoice" class="action-btn">Save Invoice</button>
+            <button type="button" id="loadInvoice" class="action-btn">Load Invoice</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

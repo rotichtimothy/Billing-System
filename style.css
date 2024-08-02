@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #555;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+}
+
+.product label {
+    grid-column: span 1;
+    align-self: center;
+}
+
+.product input {
+    grid-column: span 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.add-product-btn {
+    grid-column: span 2;
+    padding: 10px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1em;
+}
+
+.add-product-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #004080);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.total-amount {
+    text-align: right;
+    font-size: 1.4em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1em;
+}
+
+.action-btn:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+}
